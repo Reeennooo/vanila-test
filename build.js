@@ -7,12 +7,20 @@ execSync("sass src/scss/main.scss dist/css/main.css --no-source-map", { stdio: "
 
 // 2. Создать папки
 fs.mkdirSync("dist/js/components", { recursive: true });
+fs.mkdirSync("dist/js/blocks", { recursive: true });
+fs.mkdirSync("dist/js/utils", { recursive: true });
 fs.mkdirSync("dist/assets/images", { recursive: true }); // для картинок
 
 // 3. Копировать JS
 fs.copyFileSync("src/js/main.js", "dist/js/main.js");
 fs.readdirSync("src/js/components").forEach(file => {
   fs.copyFileSync(`src/js/components/${file}`, `dist/js/components/${file}`);
+});
+fs.readdirSync("src/js/blocks").forEach(file => {
+  fs.copyFileSync(`src/js/blocks/${file}`, `dist/js/blocks/${file}`);
+});
+fs.readdirSync("src/js/utils").forEach(file => {
+  fs.copyFileSync(`src/js/utils/${file}`, `dist/js/utils/${file}`);
 });
 
 // 4. Копировать картинки
