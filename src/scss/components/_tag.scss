@@ -1,0 +1,29 @@
+.tag {
+  max-width: max-content;
+  border-radius: 4px;
+  padding: 1px 8px;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $color-white;
+
+  &_green {
+    background-color: $color-success;
+  }
+
+  &_blue {
+    background-color: $color-info;
+  }
+
+  &_orange {
+   background-color: $color-warning;
+  }
+
+  &_red {
+    background-color: $color-red;
+  }
+
+  &_violet {
+    background-color: $color-info;
+  }
+}

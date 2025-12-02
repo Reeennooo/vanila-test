@@ -1,0 +1,23 @@
+.header {
+  padding: 38px 0 0;
+  text-align: center;
+
+  &__text {
+    transform: translateX(-3%);
+  }
+
+  &__title {
+    font-size: 46px;
+    line-height: 130%;
+    font-weight: 900;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+}

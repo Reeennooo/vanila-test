@@ -1,0 +1,310 @@
+@charset "UTF-8";
+.btn {
+  padding: 10px 16px;
+  background: #9d1dbf;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #005fcc;
+}
+
+.courseCard {
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #D7DADD;
+  height: 438px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.courseCard__img {
+  width: 100%;
+  height: 55%;
+}
+.courseCard__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.courseCard__content {
+  flex-grow: 1;
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 4px 4px;
+  row-gap: 20px;
+  border-bottom: 1px solid #E5E8ED;
+  border-right: 1px solid #E5E8ED;
+  border-left: 1px solid #E5E8ED;
+}
+.courseCard__info {
+  color: #9A9CA5;
+}
+.courseCard__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+.courseCard__price {
+  color: #FF3F3A;
+}
+.courseCard .card-content {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.tab {
+  color: #9A9CA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+.tab__content {
+  display: flex;
+  align-items: start;
+  column-gap: 4px;
+}
+.tab__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  white-space: nowrap;
+}
+.tab__count {
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 150%;
+}
+.tab_active {
+  border-color: #FF3F3A;
+}
+.tab_active .tab__text,
+.tab_active .tab__count {
+  color: #FF3F3A;
+}
+
+.header {
+  padding: 38px 0 0;
+  text-align: center;
+}
+.header__text {
+  transform: translateX(-3%);
+}
+.header__title {
+  font-size: 46px;
+  line-height: 130%;
+  font-weight: 900;
+}
+.header__subtitle {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.search {
+  position: relative;
+  width: 315px;
+  height: 44px;
+}
+.search__input {
+  position: absolute;
+  inset: 0;
+  color: #9A9CA5;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  padding: 12px 48px 12px 12px;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+}
+.search__icon {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.courses {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 192px;
+}
+.courses__loadMore {
+  position: absolute;
+  left: 50%;
+  bottom: 86px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 700;
+}
+
+/* таблет */
+@media (max-width: 900px) {
+  .courses {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* телефон */
+@media (max-width: 600px) {
+  .courses {
+    grid-template-columns: 1fr;
+  }
+}
+.tag {
+  max-width: max-content;
+  border-radius: 4px;
+  padding: 1px 8px;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.tag_green {
+  background-color: #03CEA4;
+}
+.tag_blue {
+  background-color: #5A87FC;
+}
+.tag_orange {
+  background-color: #F89828;
+}
+.tag_red {
+  background-color: #F52F6E;
+}
+.tag_violet {
+  background-color: #5A87FC;
+}
+
+/* reset.scss */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.5;
+  background: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+fieldset, legend {
+  border: 0;
+}
+
+button, input, select, textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  position: relative;
+  background: #FFFFFF;
+  color: #1E212C;
+}
+
+main {
+  padding-top: 85px;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.tabBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.panel {
+  display: flex;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#svgDots {
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+
+#svgShapes {
+  position: absolute;
+  top: 50%;
+  left: 56px;
+}
+
+#svgShapes1 {
+  position: absolute;
+  bottom: 268px;
+  right: 72px;
+}
+
+/*# sourceMappingURL=main.css.map */
