@@ -22,6 +22,7 @@ fs.readdirSync("src/js/blocks").forEach(file => {
 fs.readdirSync("src/js/utils").forEach(file => {
   fs.copyFileSync(`src/js/utils/${file}`, `dist/js/utils/${file}`);
 });
+fs.copyFileSync(`src/js/mock.js`, `dist/js/mock.js`);
 
 // 4. Копировать картинки
 function copyFolderSync(src, dest) {
