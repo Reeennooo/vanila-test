@@ -20,5 +20,3 @@ index.html
 ```bash
 npm run build
 ```
-
->>>>>>> Stashed changes
