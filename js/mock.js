@@ -10,7 +10,7 @@ export const courseTypes = {
 export const coursesMock = [
   {
     id: courseTypes.marketing,
-    img: 'src/assets/images/1.jpg',
+    img: 'assets/images/1.jpg',
     tagText: 'Marketing',
     title: "The Ultimate Google Ads Training Course",
     author: "by Jerome Bell",
@@ -18,7 +18,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.management,
-    img: 'src/assets/images/2.jpg',
+    img: 'assets/images/2.jpg',
     tagText: 'Management',
     title: "Prduct Management Fundamentals",
     author: "by Marvin McKinney",
@@ -26,7 +26,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.recruting,
-    img: 'src/assets/images/3.jpg',
+    img: 'assets/images/3.jpg',
     tagText: 'HR & Recruting',
     title: "HR  Management and Analytics",
     author: "by Leslie Alexander Li",
@@ -34,7 +34,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.marketing,
-    img: 'src/assets/images/4.jpg',
+    img: 'assets/images/4.jpg',
     tagText: 'Marketing',
     title: "Brand Management & PR Communications",
     author: "by Kristin Watson",
@@ -42,7 +42,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.management,
-    img: 'src/assets/images/5.jpg',
+    img: 'assets/images/5.jpg',
     tagText: 'Management',
     title: "Graphic Design Basic",
     author: "by Guy Hawkins",
@@ -50,7 +50,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.management,
-    img: 'src/assets/images/6.jpg',
+    img: 'assets/images/6.jpg',
     tagText: 'Management',
     title: "Business Development Management",
     author: "by Dianne Russell",
@@ -58,7 +58,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.development,
-    img: 'src/assets/images/7.jpg',
+    img: 'assets/images/7.jpg',
     tagText: 'Development',
     title: "Highload Software Architecture",
     author: "by Brooklyn Simmons",
@@ -66,7 +66,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.recruting,
-    img: 'src/assets/images/8.jpg',
+    img: 'assets/images/8.jpg',
     tagText: 'HR & Recruting',
     title: "Human Resources – Selection and Recruitment",
     author: "by Kathryn Murphy",
@@ -74,7 +74,7 @@ export const coursesMock = [
   },
   {
     id: courseTypes.design,
-    img: 'src/assets/images/9.jpg',
+    img: 'assets/images/9.jpg',
     tagText: 'Design',
     title: "User Experience. Human-centered Design",
     author: "by Cody Fisher",
