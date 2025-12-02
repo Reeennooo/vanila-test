@@ -7,6 +7,7 @@
   border-radius: 4px;
   border: 1px solid transparent;
   transition: border-color .3s ease, color .3s ease;
+  cursor: pointer;
 
   &__content {
     display: flex;
